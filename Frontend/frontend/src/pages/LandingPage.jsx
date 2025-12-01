@@ -30,7 +30,7 @@ const LandingPage = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section>   
 
             {/* Features Section */}
             <section className="py-20 bg-gray-900/30">
@@ -41,7 +41,7 @@ const LandingPage = () => {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         {[
                             {
-                                icon: "🎨",
+                                icon: "🎨",     
                                 title: "Real-time Collaboration",
                                 desc: "Draw simultaneously with multiple users. See changes instantly as they happen.",
                                 gradient: "from-purple-500 to-pink-500"
@@ -141,6 +141,7 @@ const LandingPage = () => {
                                 <p className="text-gray-500 group-hover:text-gray-400 transition-colors duration-300 text-sm leading-relaxed">
                                     {item.desc}
                                 </p>
+                                <p></p>
                             </div>
                         ))}
                     </div>
@@ -169,14 +170,14 @@ const LandingPage = () => {
                                 View Gallery
                                 <span className="group-hover:scale-110 transition-transform duration-300">🖼️</span>
                             </span>
-                        </button>
+                        </button> 
                     </div>
                     <p className="text-gray-600 text-sm mt-6">No registration required • Instant access</p>
                 </div>
             </section>
 
             {/* Footer */}
-            <footer className="border-t border-gray-800 bg-gray-900/50 py-12">
+            <footer className="border-t border-gray-800  bg-gray-900/50 py-12">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center text-gray-500">
                         <p className="mb-4">&copy; 2024 Draw Together. Built with React & WebSockets.</p>
@@ -197,5 +198,4 @@ const LandingPage = () => {
         </div>
     );
 };
-
 export default LandingPage;
